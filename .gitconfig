@@ -1,0 +1,20 @@
+[winUpdater]
+    recentlySeenVersion = 2.25.0.windows.1
+
+[alias]
+    history = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    st = status -sb
+    last = log -1 HEAD --stat
+    search = !git rev-list --all | xargs git grep -F
+    gl = config --global -l
+    
+    l = log --pretty=format:'%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%an]' --abbrev-commit --date=short
+    lg = log --pretty=format:'%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%an]' --graph --date=short
+    ll = log --pretty=format:'%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%an]' --decorate --numstat --date=short
+    
+    pr = pull --rebase
+    su = submodule update --init
+    wip = commit -am "WIP"
+
+[core]
+    autocrlf = true
