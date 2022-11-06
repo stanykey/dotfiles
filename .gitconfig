@@ -2,6 +2,7 @@
     autocrlf = true
     legacyheaders = false
     pager = less -R
+    editor = code --wait
 
 [color]
     ui = auto
@@ -35,3 +36,7 @@
     pr = pull --rebase
     su = submodule update --init
     wip = commit -am "WIP"
+
+    amend = commit --amend --no-edit
+    drop-last = reset HEAD~
+    
