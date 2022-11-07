@@ -39,4 +39,4 @@
 
     amend = commit --amend --no-edit
     drop-last = reset HEAD~
-    
+    prune = fetch --all --prune
